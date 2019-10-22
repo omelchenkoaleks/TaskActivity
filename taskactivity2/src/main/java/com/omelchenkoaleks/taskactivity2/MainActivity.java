@@ -1,15 +1,16 @@
-package com.omelchenkoaleks.taskactivity;
+package com.omelchenkoaleks.taskactivity2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActivityManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
 import java.util.List;
 
-public abstract class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     private static final String TAG = "Base";
     private List<ActivityManager.RunningTaskInfo> mList;
     private ActivityManager mActivityManager;
@@ -35,5 +36,7 @@ public abstract class MainActivity extends AppCompatActivity {
         }
     }
 
-    abstract public void onClick(View view);
+    public void onClick(View view) {
+        startActivity(new Intent("mngtask1_activity_c"));
+    }
 }

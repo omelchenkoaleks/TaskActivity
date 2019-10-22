@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.omelchenkoaleks.taskactivity">
+    package="com.omelchenkoaleks.taskactivity2">
 
     <uses-permission android:name="android.permission.GET_TASKS" />
 
@@ -11,15 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityD" />
-        <activity android:name=".ActivityC">
-            <intent-filter>
-                <action android:name="mngtask1_activity_c" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".ActivityB" />
-        <activity android:name=".ActivityA">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
