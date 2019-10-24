@@ -14,7 +14,9 @@
         <activity
             android:name=".ActivityD"
             android:launchMode="singleTop" />
-        <activity android:name=".ActivityC">
+        <activity
+            android:name=".ActivityC"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="mngtask1_activity_c" />
                 <category android:name="android.intent.category.DEFAULT" />
